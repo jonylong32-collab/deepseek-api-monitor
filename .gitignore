@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node / frontend
+frontend/node_modules/
+node_modules/
+frontend/dist/
+backend/app/static/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs and packaged app data
+dist/
+build/
+*.spec.tmp
+
+# Runtime configuration and local data
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+*.log
+logs/
+deepseek-monitor-logs/
+
+# Local assistant/editor artifacts
+.reasonix/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# WebView/browser profile data
+*.WebView2/
+EBWebView/

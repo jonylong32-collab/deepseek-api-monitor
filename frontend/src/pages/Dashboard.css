@@ -1,0 +1,143 @@
+/* 仪表盘样式 */
+.dashboard {
+  animation: fadeIn 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 概览卡片行 */
+.summary-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* 图表区域 */
+.charts-row {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+
+.chart-card {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chart-card-wide {
+  min-height: 350px;
+}
+
+.chart-card-narrow {
+  min-height: 280px;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.chart-header h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.chart-source {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.chart-body {
+  flex: 1;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 占位符 */
+.chart-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-tertiary);
+  gap: 8px;
+}
+
+.placeholder-icon {
+  font-size: 36px;
+  opacity: 0.5;
+}
+
+.placeholder-hint {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  opacity: 0.7;
+}
+
+/* 错误栏 */
+.error-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255, 71, 87, 0.1);
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  border-radius: var(--radius-sm);
+  color: var(--danger);
+  font-size: 13px;
+}
+
+/* 指标卡片 */
+.metric-card {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 0.2s;
+}
+
+.metric-card:hover {
+  border-color: var(--border-light);
+}
+
+.metric-card.accent {
+  border-color: rgba(0, 212, 255, 0.2);
+  background: linear-gradient(135deg, var(--bg-glass), var(--accent-muted));
+}
+
+.metric-title {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.metric-value.accent-value {
+  color: var(--accent);
+}
+
+.metric-subtitle {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}

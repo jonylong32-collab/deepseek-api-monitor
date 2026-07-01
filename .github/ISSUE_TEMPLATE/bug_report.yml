@@ -1,0 +1,26 @@
+name: Bug Report
+description: Report a problem with DeepSeek API Monitor.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      placeholder: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: List the steps needed to reproduce the issue.
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows version, Python version, Node version
+    validations:
+      required: false

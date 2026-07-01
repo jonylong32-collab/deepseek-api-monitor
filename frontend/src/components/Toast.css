@@ -1,0 +1,42 @@
+/* Toast 通知样式 */
+.toast {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  background: var(--bg-glass-light);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 13px;
+  z-index: 2000;
+  animation: slideUp 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.toast-success {
+  border-color: rgba(46, 213, 115, 0.3);
+  background: rgba(46, 213, 115, 0.1);
+  color: var(--success);
+}
+
+.toast-error {
+  border-color: rgba(255, 71, 87, 0.3);
+  background: rgba(255, 71, 87, 0.1);
+  color: var(--danger);
+}
+
+.toast-info {
+  border-color: rgba(0, 212, 255, 0.3);
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--accent);
+}
+
+.toast-icon {
+  font-size: 14px;
+  font-weight: 700;
+}
